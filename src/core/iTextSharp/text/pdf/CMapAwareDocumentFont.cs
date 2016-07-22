@@ -164,7 +164,7 @@ namespace iTextSharp.text.pdf {
     	    int[] e = byte2uni.ToOrderedKeys();
             if (e.Length == 0)
                 return;
-            cidbyte2uni = new char[256];
+            cidbyte2uni = new char[e.Length];
             for (int k = 0; k < e.Length; ++k) {
                 int key = e[k];
                 cidbyte2uni[key] = (char)byte2uni[key];
